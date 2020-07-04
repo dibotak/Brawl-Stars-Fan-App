@@ -1,0 +1,14 @@
+{
+  "name": "bs-fan-app-server",
+  "version": "1.0.0",
+  "description": "Brawl Stars fan app server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dibotak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

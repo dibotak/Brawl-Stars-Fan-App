@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const [ players, setPlayers ] = useState([]);
@@ -43,6 +44,9 @@ export default function Home() {
               <td>{player.name}</td>
               <td>{player.trophies}</td>
               <td>{player.club ? player.club.name : '()'}</td>
+              <td>
+                <Link to={`/player/${player.tag.slice(1)}`}>Details</Link>
+              </td>
             </tr>
           ))}
           {isLoading && (

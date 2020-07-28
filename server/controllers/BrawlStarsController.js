@@ -95,6 +95,7 @@ class BrawlStarsController {
     try {
       const response = await brawlstars.get(`/players/${encodeURIComponent(playerTag)}`);
       const playerDetail = response.data;
+      
       res.status(200).json(playerDetail);
     } catch (error) {
       res.status(500).json(error);
